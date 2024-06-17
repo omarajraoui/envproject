@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import './App.css'
-import { REACT_LIVE_SCROLLING_SPEED, REACT_START_HOUR } from './config.js'
+import { REACT_LIVE_SCROLLING_SPEED, REACT_START_HOUR } from './config'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <p className="read-the-docs">

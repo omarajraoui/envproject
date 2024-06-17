@@ -12,6 +12,6 @@ FROM builder as final
 RUN npm run build
 
 FROM ${RUNTIME_IMAGE} as production 
-COPY --from=final /app/dist /usr/local/apache2/htdocs/envproject
+COPY --from=final ./dist /usr/local/apache2/htdocs/envproject
 EXPOSE 3000
 ENTRYPOINT ["apachectl","-D","FOREGROUND"]
