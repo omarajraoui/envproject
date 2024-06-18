@@ -12,5 +12,5 @@ RUN npm run build
 
 FROM ${RUNTIME_IMAGE} as production 
 COPY --from=final app/dist /usr/local/apache2/htdocs/envproject
-EXPOSE 3000
+EXPOSE 8080
 ENTRYPOINT ["apachectl","-D","FOREGROUND"]
