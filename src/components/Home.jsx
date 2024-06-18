@@ -1,5 +1,5 @@
 import React from 'react'
-import { REACT_LIVE_SCROLLING_SPEED, REACT_START_HOUR } from '../config'
+import { VITE_LIVE_SCROLLING_SPEED, VITE_START_HOUR } from '../config'
 
 const Home = () => {
   return (
@@ -7,11 +7,11 @@ const Home = () => {
           <div>
         <h1>hey </h1>
         <p className="read-the-docs">
-      live scrolling speed :{REACT_LIVE_SCROLLING_SPEED}
+      live scrolling speed :{VITE_LIVE_SCROLLING_SPEED}
       </p>
 
       <p className="read-the-docs">
-      start hour :{ REACT_START_HOUR}
+      start hour :{ VITE_START_HOUR}
       </p>
 
       
